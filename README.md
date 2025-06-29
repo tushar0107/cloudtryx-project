@@ -1,10 +1,10 @@
-<!-- run react frontend -->
+# run react frontend
 
 cd cloudtryx
 npm install
 npm run dev
 
-<!-- run django application -->
+# run django application
 cd cldtrx
 pip install -r requirements.txt
 
