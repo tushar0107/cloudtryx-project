@@ -35,6 +35,7 @@ class CreateUserView(generics.CreateAPIView):
             return Response({
                 'message': 'User Created Successfully',
                 'token': token.key,
+                'user': {'username':user.username,'first_name':user.first_name,'last_name':user.last_name,'email':user.email}
             }, status=status.HTTP_200_OK)
         else:
             return Response({
